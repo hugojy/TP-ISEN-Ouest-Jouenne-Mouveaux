@@ -175,6 +175,66 @@
             margin: 0;
         }
         /* FIN DU CSS POUR F13 IMAGES */
+
+        /* DÉBUT DU CSS POUR F14 BLOCKS */
+        /* BLOCKS */
+        /* Conteneur global */
+        .block-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* Ajout d'un padding pour la version complète */
+        }
+        /* Deux colonnes */
+        .block-columns {
+            display: flex;
+            gap: 40px;
+            align-items: normal;
+        }
+        .block-alternance {
+            margin: 40px auto; /* Centré dans son conteneur */
+            border: 2px solid #c8102e;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex: 1; /* Permet aux blocs de prendre la place égale */
+        }
+        .block-alternance img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .block-alternance-content {
+            padding: 24px 30px;
+        }
+        .block-alternance-content h2 {
+            font-size: 200%;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .block-alternance-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .block-button {
+            margin: auto;
+            text-align: center;
+        }
+        .block-button a {
+            background-color: #e30613;
+            color: #fff;
+            display: inline-block;
+            padding: .5rem 2rem;
+            border-radius: 3.45rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .block-button a:hover {
+            text-decoration: underline;
+        }
+        /* FIN DU CSS POUR F14 BLOCKS */
     </style>
 </head>
 <body>
@@ -196,39 +256,61 @@
             <h2>Domaines professionnels</h2>
             <div class="dp-grid">
                 <div class="dp-card">
-                    <a href="#">
-                        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Cybersécurité">
-                        <p>Cybersécurité</p>
-                    </a>
+                    <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Cybersécurité"><p>Cybersécurité</p></a>
                 </div>
                 <div class="dp-card">
-                    <a href="#">
-                        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Intelligence artificielle">
-                        <p>IA</p>
-                    </a>
+                    <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Intelligence artificielle"><p>IA</p></a>
                 </div>
                 <div class="dp-card">
-                    <a href="#">
-                        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Santé">
-                        <p>Santé</p>
-                    </a>
+                    <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Santé"><p>Santé</p></a>
                 </div>
                 <div class="dp-card">
-                    <a href="#">
-                        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Énergies">
-                        <p>Énergies</p>
-                    </a>
+                    <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Énergies"><p>Énergies</p></a>
                 </div>
                 <div class="dp-card">
-                    <a href="#">
-                        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Aéronautique">
-                        <p>Aéronautique</p>
-                    </a>
+                    <a href="#"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Aéronautique"><p>Aéronautique</p></a>
                 </div>
             </div>
         </section>
         
+        <div class="block-container">
+            <div class="block-columns">
+                <section class="block-alternance">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                    <div class="block-alternance-content">
+                        <h2>Cycle post-bac</h2>
+                        <p>Le Cycle Post-Bac est accessible directement après le bac. Il prépare au métier d'ingénieur en 2 ans.</p>
+                        <div class="block-button">
+                            <a href="ACOMPLETER">En savoir plus</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="block-alternance">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                    <div class="block-alternance-content">
+                        <h2>Formation d'ingénieur</h2>
+                        <p>Accédez au cycle d'ingénieur en 3 ans après une classe préparatoire ou une licence scientifique.</p>
+                        <div class="block-button">
+                            <a href="ACOMPLETER">En savoir plus</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="block-alternance">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                    <div class="block-alternance-content">
+                        <h2>Ingénieur par apprentissage</h2>
+                        <p>Devenez ingénieur en 3 ans via l'apprentissage, en alternant école et entreprise.</p>
+                        <div class="block-button">
+                            <a href="ACOMPLETER">En savoir plus</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         </main>
+    
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-col footer-col-logo">
