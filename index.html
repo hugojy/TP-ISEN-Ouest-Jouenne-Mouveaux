@@ -2,147 +2,81 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Accueil - ISEN Ouest</title>
+
     <style>
-        /* --- Styles Généraux --- */
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
+        html {
+            font-family: Open Sans,sans-serif;
         }
-
-        /* --- En-tête --- */
-        header {
-            background-color: #CE0033; /* Rouge ISEN */
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        /* Conteneur principal du header */
+        .header-isen {
+          background: #fff;
+          border-bottom: 1px solid #e5e5e5;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        /* Organisation interne */
+        .header-container {
+          max-width: 1400px; /* un peu plus large pour aérer */
+          margin: 0 auto;
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
         }
-
-        /* --- Sections --- */
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto; /* Centre le contenu */
-            padding: 0 1rem;
+        /* Logo */
+        .header-logo img {
+          height: 45px; /* logo moins haut */
+          width: auto;
         }
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #333;
+        /* Navigation */
+        .header-nav {
+          background: #e30613; /* Rouge ISEN */
+          flex: 1; /* occupe toute la largeur dispo */
+          margin-left: 40px; /* espace entre logo et barre rouge */
         }
-
-        /* --- Section des vignettes de formation --- */
-        .formations-grid {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem; /* Espace entre les images */
-            flex-wrap: wrap; /* Permet aux images de passer à la ligne sur de petits écrans */
-            margin-bottom: 3rem;
+        .header-nav ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around; /* liens espacés sur toute la largeur */
+          margin: 0;
+          padding: 0;
         }
-        .formations-grid img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in-out;
+        .header-nav li {
+          flex: 1; /* chaque lien occupe une largeur égale */
+          text-align: center;
         }
-        .formations-grid img:hover {
-            transform: scale(1.05); /* Effet de zoom au survol */
+        .header-nav a {
+          display: block;
+          padding: 14px 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: #fff;
+          transition: background 0.2s;
+          text-decoration: none;
         }
-
-        /* --- Section des blocs de parcours --- */
-        .parcours-grid {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        .parcours-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 2rem;
-            text-align: center;
-            flex: 1; /* Chaque carte prend une part égale de l'espace */
-            min-width: 300px;
-            max-width: 450px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .parcours-card h3 {
-            font-size: 1.5rem;
-            color: #CE0033;
-        }
-        .parcours-card p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-        .parcours-card a {
-            display: inline-block;
-            background-color: #CE0033;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
-        .parcours-card a:hover {
-            background-color: #a80029; /* Rouge plus foncé au survol */
-        }
-
-        /* --- Pied de page --- */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 3rem;
+        .header-nav a:hover {
+          text-decoration: underline;
         }
     </style>
-</head>
+    </head>
 <body>
-    <header>
-        <h1>ISEN Ouest</h1>
+    <header class="header-isen">
+      <div class="header-container">
+        <a href="/" class="header-logo">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+        </a>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Liens à venir</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <main class="container">
-        <section>
-            <h2>Nos formations d'ingénieurs</h2>
-            <div class="formations-grid">
-                <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
-                <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement Logiciel">
-                <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence Artificielle">
-            </div>
-        </section>
-
-        <section class="parcours-section">
-            <div class="parcours-grid">
-                <article class="parcours-card">
-                    <h3>Formations post-bac</h3>
-                    <p>Chaque étudiant construit son propre parcours de formation sur 5 ans. Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
-                    <a href="postbac.html">Découvrez nos 7 cycles post-bac</a>
-                </article>
-                <article class="parcours-card">
-                    <h3>Devenir ingénieur par alternance</h3>
-                    <p>Le cycle ingénieur en apprentissage permet d'alterner les périodes à l'école et au sein de l'entreprise. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré.</p>
-                    <a href="apprentissage.html">Formation d'ingénieurs sous statut apprenti</a>
-                </article>
-            </div>
-        </section>
+    <main style="min-height: 50vh; padding: 40px 20px;">
+        <h1>Page d'accueil du site ISEN Ouest</h1>
+        <p>Contenu principal de la page d'accueil à venir.</p>
     </main>
-
-    <footer>
-        <p>&copy; 2025 ISEN Ouest</p>
-    </footer>
+    
+    <footer><p>&copy; 2025 ISEN Ouest</p></footer>
 </body>
 </html>
