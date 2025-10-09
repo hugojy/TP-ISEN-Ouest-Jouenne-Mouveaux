@@ -6,6 +6,7 @@
     <title>Nos formations - ISEN Ouest</title>
 
     <style>
+        /* CSS GENERAL (F25) */
         html {
             font-family: Open Sans,sans-serif;
         }
@@ -65,7 +66,7 @@
           text-decoration: underline;
         }
         
-        /* Début du CSS pour F26 Footer Simple */
+        /* CSS FOOTER (F26) */
         .site-footer {
           background: #000;
           color: #fff;
@@ -171,7 +172,61 @@
           font-family: Arial, sans-serif;
           font-size: 14px;
         }
-        /* Fin du CSS pour F26 Footer Simple */
+        
+        /* DÉBUT CSS TEXT_IMG (F27) */
+        .block-devenir {
+          background: #fff;
+          padding: 60px 20px;
+        }
+
+        /* Conteneur global */
+        .block-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        /* Titre en haut */
+        .block-title {
+          font-size: 42px;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 40px;
+          text-align: left;
+        }
+
+        /* Deux colonnes */
+        .block-columns-img {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+        }
+
+        /* Colonne texte */
+        .block-text {
+          flex: 1;
+          padding-left: 5%;
+        }
+
+        .block-text p {
+          font-size: 16px;
+          line-height: 1.7;
+          color: #333;
+          margin-bottom: 18px;
+        }
+
+        /* Colonne image */
+        .block-image {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+
+        .block-image img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 6px;
+        }
+        /* FIN CSS TEXT_IMG (F27) */
 
     </style>
 </head>
@@ -189,13 +244,31 @@
         </nav>
       </div>
     </header>
-    <section>
-        <h2>Nos formations ingénieurs</h2>
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement Logiciel">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence Artificielle">
-    </section>
-    
+    <main>
+        <section class="block-devenir">
+          <div class="block-container">
+            <h1 class="block-title">Nos formations : L'Ingénieur Généraliste</h1>
+
+            <div class="block-columns-img">
+              <div class="block-text">
+                <p>
+                  À l'ISEN Ouest, nos formations d'ingénieur sont basées sur un socle scientifique et technique solide. Ce modèle vous permet d'acquérir les fondamentaux nécessaires pour innover dans n'importe quel domaine du numérique.
+                </p>
+                <p>
+                  Dès la 3e année, vous pouvez choisir une Majeure parmi nos domaines d'expertise : Cybersécurité, Développement Logiciel, ou Intelligence Artificielle. Chaque majeure est conçue pour répondre aux besoins spécifiques du marché de l'emploi et vous prépare à des carrières passionnantes.
+                </p>
+                <p>
+                  Maecenas eget sapien consequat, mattis dolor non, laoreet erat. Suspendisse lacinia sed mauris eu feugiat. Quisque vitae ultricies mauris. Nulla in nisl non massa mattis facilisis ut in felis. Donec fringilla vulputate lacus a mollis. Vivamus mattis eros et augue molestie egestas. Duis et elit ac diam semper varius vitae in elit. Nam vel felis auctor, aliquet dui in, scelerisque lectus.
+                </p>
+              </div>
+        
+              <div class="block-image">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/ingenieur-generaliste.jpg" alt="Photo d'étudiants en formation d'ingénieur">
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
     <footer class="site-footer">
       <div class="footer-container">
     
