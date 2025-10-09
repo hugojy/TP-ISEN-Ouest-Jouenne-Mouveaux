@@ -18,7 +18,7 @@
 
         /* Organisation interne */
         .header-container {
-          max-width: 1400px; /* un peu plus large pour aérer */
+          max-width: 1400px; 
           margin: 0 auto;
           padding: 0 20px;
           display: flex;
@@ -28,27 +28,27 @@
 
         /* Logo */
         .header-logo img {
-          height: 45px; /* logo moins haut */
+          height: 45px; 
           width: auto;
         }
 
         /* Navigation */
         .header-nav {
-          background: #e30613; /* Rouge ISEN */
-          flex: 1; /* occupe toute la largeur dispo */
-          margin-left: 40px; /* espace entre logo et barre rouge */
+          background: #e30613; 
+          flex: 1; 
+          margin-left: 40px; 
         }
 
         .header-nav ul {
           list-style: none;
           display: flex;
-          justify-content: space-around; /* liens espacés sur toute la largeur */
+          justify-content: space-around; 
           margin: 0;
           padding: 0;
         }
 
         .header-nav li {
-          flex: 1; /* chaque lien occupe une largeur égale */
+          flex: 1; 
           text-align: center;
         }
 
@@ -74,8 +74,6 @@
           padding: 40px 20px 20px;
           font-family: Arial, sans-serif;
         }
-
-        /* Conteneur principal */
         .footer-container {
           display: flex;
           max-width: 1200px;
@@ -83,21 +81,17 @@
           gap: 40px;
           flex-wrap: wrap;
         }
-
-        /* Colonne 1 : logo + bouton */
         .footer-col-logo {
           flex: 1;
           min-width: 220px;
           display: flex;
           flex-direction: column;
         }
-
         .footer-logo {
           height: 100px;
           margin-bottom: 15px;
           margin-top: 30px;
         }
-
         .btn-contact {
           display: block;
           padding: 10px 20px;
@@ -108,27 +102,20 @@
           border-radius: 25px;
           margin: auto;
         }
-
         .btn-contact:hover {
           background: #a00b23;
         }
-
-        /* Zone liens (colonnes 2-4) */
         .footer-links-section {
           flex: 3;
           display: flex;
           flex-direction: column;
         }
-
-        /* Titre général */
         .footer-cities {
           font-size: 40px;
           font-weight: 700;
           text-align: left;
           margin-bottom: 20px;
         }
-        
-        /* Bas de page */
         .footer-bottom {
           text-align: center;
           padding-top: 15px;
@@ -138,6 +125,54 @@
           font-size: 14px;
         }
         /* FIN DU CSS POUR F16 FOOTER SIMPLE */
+        
+        /* DÉBUT CSS TEXT_IMG (F17) */
+        .block-devenir {
+          background: #fff;
+          padding: 60px 20px;
+        }
+        /* Conteneur global */
+        .block-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        /* Titre en haut */
+        .block-title {
+          font-size: 42px;
+          font-weight: 700;
+          color: #000;
+          margin-bottom: 40px;
+          text-align: left;
+        }
+        /* Deux colonnes */
+        .block-columns-img {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+        }
+        /* Colonne texte */
+        .block-text {
+          flex: 1;
+          padding-left: 5%;
+        }
+        .block-text p {
+          font-size: 16px;
+          line-height: 1.7;
+          color: #333;
+          margin-bottom: 18px;
+        }
+        /* Colonne image */
+        .block-image {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+        .block-image img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 6px;
+        }
+        /* FIN CSS TEXT_IMG (F17) */
     </style>
 </head>
 <body>
@@ -154,26 +189,38 @@
       </div>
     </header>
 
-    <section>
-        <h2>Ingénieur par l’apprentissage</h2>
-        <p>Le cycle ingénieur correspond aux trois dernières années de la formation d’ingénieur. Sous statut apprenti, ces trois années sont réalisées en apprentissage au sein d’une entreprise d’accueil. Tout au long de cette formation, vous alternez les périodes à l’école et les périodes en entreprises en montant progressivement en compétence. Ces périodes durent environ 6 semaines lors des deux premières années, puis 6 mois la dernière année. Ces rythmes d’alternance permettent aux étudiants de travailler avec des entreprises sur tout le territoire français.</p>
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/11/08/shema-cycle-inge-12-1320x752.png" alt="Schéma cycle ingénieur">
-    </section>
+    <main>
+        <section class="block-devenir">
+          <div class="block-container">
+            <h1 class="block-title">Ingénieur par l’apprentissage</h1>
 
+            <div class="block-columns-img">
+              <div class="block-text">
+                <p>
+                  Le cycle ingénieur correspond aux trois dernières années de la formation d’ingénieur. Sous statut apprenti, ces trois années sont réalisées en apprentissage au sein d’une entreprise d’accueil. Tout au long de cette formation, vous alternez les périodes à l’école et les périodes en entreprises en montant progressivement en compétence.
+                </p>
+                <p>
+                  Ces périodes durent environ 6 semaines lors des deux premières années, puis 6 mois la dernière année. Ces rythmes d’alternance permettent aux étudiants de travailler avec des entreprises sur tout le territoire français.
+                </p>
+              </div>
+        
+              <div class="block-image">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/11/08/shema-cycle-inge-12-1320x752.png" alt="Schéma cycle ingénieur">
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
     <footer class="site-footer">
       <div class="footer-container">
-    
         <div class="footer-col footer-col-logo">
           <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
                alt="ISEN Ouest" class="footer-logo">
         </div>
-    
         <div class="footer-links-section">
           <p class="footer-cities">Texte à venir</p>
         </div>
-    
       </div>
-    
       </footer>
     <div class="footer-bottom">
       &copy;
