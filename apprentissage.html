@@ -1,15 +1,42 @@
-<header class="header-isen">
-    <a href="index.html" class="header-logo">
-        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
-    </a>
-    <nav class="header-nav">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="postbac.html">Post-Bac</a></li>
-            <li><a href="apprentissage.html">Apprentissage</a></li>
-            <li><a href="formations.html">Formation</a></li>
-            <li><a href="devenir_inge.html">Devenir Ingénieur</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEN Ouest - Apprentissage</title>
+    <style>
+        /* --- BASE --- */
+        html { font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; }
+        body { margin: 0; padding: 0; background-color: #fff; }
+
+        /* --- F15 : HEADER SIMPLE (Identique à l'index) --- */
+        .header-isen {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .header-logo img { height: 45px; }
+        .header-nav { background: #e30613; flex-grow: 1; margin-left: 40px; }
+        .header-nav ul { list-style: none; display: flex; margin: 0; padding: 0; justify-content: space-around; }
+        .header-nav a { display: block; padding: 15px; color: #fff; text-decoration: none; font-weight: bold; }
+        .header-nav a:hover { background: #b3050f; }
+
+        /* --- F17 : TEXT_IMG (Contenu Apprentissage) --- */
+        .apprentissage-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .apprentissage-text { flex: 1; }
+        .apprentissage-text h1 { color: #e30613; font-size: 36px; margin-bottom: 20px; }
+        .apprentissage-text p { font-size: 18px; line-height: 1.6; color: #333; }
+        .apprentissage-image { flex: 1; }
+        .apprentissage-image img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        /* --- F
